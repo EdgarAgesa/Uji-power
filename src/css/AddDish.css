@@ -1,0 +1,170 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+.add-dish-section {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+/* Form container */
+.add-dish-form {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-dish-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Form groups */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+/* Ingredient section */
+.ingredients-section {
+  margin-top: 20px;
+}
+
+.ingredients-section h3 {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+/* Ingredient input styling */
+.ingredient-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ingredient-input input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.ingredient-input button {
+  background-color: #ff5a5f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.ingredient-input button:hover {
+  background-color: #e04b4e;
+}
+
+/* Buttons */
+button[type="button"] {
+  display: inline-block;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+  margin: 5px 0;
+}
+
+button[type="button"]:hover {
+  background-color: #2980b9;
+}
+
+button[type="submit"] {
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #218c4f;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .add-dish-form {
+    padding: 15px;
+  }
+
+  .form-group input[type="text"],
+  .form-group textarea {
+    font-size: 14px; /* Reduce font size */
+    padding: 8px; /* Reduce padding */
+  }
+
+  .ingredient-input input[type="text"] {
+    font-size: 12px; /* Smaller font for small screens */
+    padding: 6px; /* Less padding */
+  }
+
+  button[type="button"],
+  button[type="submit"] {
+    font-size: 12px; /* Smaller font for buttons */
+    padding: 8px 10px; /* Adjust padding */
+  }
+
+  .ingredient-input {
+    flex-direction: column; /* Stack inputs and button vertically */
+  }
+
+  .ingredient-input button {
+    margin-top: 5px; /* Add some spacing when stacked */
+    width: 100%; /* Ensure button spans full width */
+  }
+}
